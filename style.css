@@ -41,7 +41,7 @@
 body {
   cursor: default;
   margin: auto;
-  font-family: "GangwonEdu_OTFBoldA", normal;
+  font-family: "GangwonEdu_OTFBoldA";
   /* height: 100vh;
   background-image: url("./imgs/책방일지.jpg");
   background-repeat: no-repeat;
@@ -78,7 +78,6 @@ h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 8px 0;
 }
 
 @font-face {
@@ -94,9 +93,9 @@ h2 {
 #navbar {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 30px 30px;
-  font-size: 30px;
+  align-items: center;
+  padding: 20px 20px;
+  font-size: 20px;
   font-weight: 600;
   border-bottom: 1px solid var(--color-dark-white);
 }
@@ -107,19 +106,70 @@ h2 {
 }
 
 .navbar_favicon {
-  width: 37px;
-  height: 37px;
-  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
 }
 
 .navbar_menu {
   display: flex;
 }
 
-#navbar_menu_inspection {
+.navbar_menu_inspection {
   padding: 0px 30px 0px 0px;
 }
 
 .navbar_pictures {
   display: flex;
+}
+
+/* Main */
+
+#main {
+  width: auto;
+  height: 1000px;
+  margin: 0px;
+  background-image: url("./imgs/책방일지.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  padding: 100px 70px 0px;
+}
+
+.main_title {
+  margin-bottom: 60px;
+}
+
+.main_btn {
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 28px;
+  margin-right: 10px;
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
+  border-radius: 45%;
+}
+
+.main_list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main_list_meeting,
+.main_list_style,
+.main_list_taste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.main_list li:before {
+  content: "";
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
 }

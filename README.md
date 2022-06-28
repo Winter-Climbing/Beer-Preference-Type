@@ -42,3 +42,60 @@ JS를 이용해서 navbar 스크롤 위치에 따라 스타일 변경 적용
 - navbar에 position: fixed를 사용하니 navbar가 사라지는데 그 이유를 몰라 한 동안 고생했다.
 
 - 해결법은 z-index:1 을 주는 것으로 해결. main보다 우선 순위가 떨어져서 main img 뒤에 위치해서 사라졌던 것으로 파악
+
+<br>
+
+---
+
+<br>
+
+## 220628 3일차
+
+<br>
+
+- 홈페이지 대문에 있는 '맥주 취향 검사' 버튼에 애니메이션 추가
+- CSS를 이용해서 사용자 디스플레이 화면에 맞게 배경 이미지 세팅 - <span style='background-color:#fff5b1'><span style='color:black'>1일차 문제 해결</span></span>
+- JS를 이용해서 '맥주 취향 검사' 버튼을 누를 경우 qna 페이지로 이동 기능 추가
+
+<br>
+
+![image description](./md/220628-1.png)
+![image description](./md/220628-3.png)
+
+<br>
+
+<center>짜잔 없었는데 있었습니다!</center>
+
+<br><br><br><br><br>
+
+```javascript
+const first_page = document.querySelector("#first_page");
+const qna = document.querySelector("#qna");
+
+const start = () => {
+  first_page.style.WebkitAnimation = "fade_out 1s";
+  first_page.style.animation = "fade_out 1s";
+  setTimeout(() => {
+    qna.style.WebkitAnimation = "fade_in 1s";
+    qna.style.animation = "fade_in 1s";
+    setTimeout(() => {
+      first_page.style.display = "none";
+      qna.style.display = "block";
+    }, 400);
+  }, 400);
+};
+```
+
+<br>
+
+css에 애니메이션 키프레임을 넣고 html 해당 id들을 가져와서 변수로 넣은 다음, style.display로 none과 block을 나타내다가 너무 급작스럽게 페이지가 넘어가서 setTimeout을 썼다.
+
+<br>
+
+### 어려웠던 점 && 고민
+
+- 어려웠다기 보다는 기껏 만들었던 스크롤 움직임에 반응하는 js가 스크롤을 없애면서 무용지물이 되어버려 그게 좀 슬펐다. (사용자 디스플레이 맞춤 css)
+
+- CSS에서 글로벌 단위로 일괄적으로 적용시키던 코드를 어디에 넣을지 고민을 했는데 작업하는 중에는 모든 CSS 파일에 다 넣어 놓는게 좋을 것 같다. 그래야 속성값에서 자동 생성이 되면서 작성이 용이하다. 작업이 끝나고는 style.css 제외하고 나머지에는 다 삭제하면 될 듯.
+
+- 핸드폰 화면으로 볼 경우 예상대로 정렬이 다 흐트러지고 글도 배경 때문에 잘 안 보인다. 반응형으로 작업해야 되겠다.

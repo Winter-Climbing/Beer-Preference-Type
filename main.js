@@ -12,8 +12,8 @@ const start = () => {
     setTimeout(() => {
       first_page.style.display = "none";
       qna.style.display = "block";
-    }, 450);
-  }, 450);
+    }, 400);
+  }, 400);
 };
 
 const navber = document.querySelector("#navbar");

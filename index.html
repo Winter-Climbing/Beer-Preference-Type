@@ -14,7 +14,7 @@
       name="keywords"
       content="대구, 책방일지, 대구 독서모임, 맥주, 맥주 시음회, 맥주모임, 소모임"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./imgs/beer-favicon.png" type="image/png" sizes="" />
     <script
       src="https://kit.fontawesome.com/3b07a93f56.js"
@@ -26,65 +26,81 @@
   
 
   <body>
-    <nav id="navbar">
-      <h2 class="blind">목록입니다.</h2>
-      <div class="navbar_logo">
-        <img
-          src="./imgs/beer-favicon.png"
-          alt="This page's logo"
-          class="navbar_favicon"
-        />
-        <a href="#" class="navbar_logo_title aTextDeco">책방일지</a>
-      </div>
-      <ul class="navbar_menu">
-        <li class="navbar_menu_inspection">맥주 취향 검사</li>
-        <li>취향 유형</li>
-      </ul>
-      <a href="#" class="aTextDeco navbar_pictures">사진들</a>
-    </nav>
-
-    <!-- Main -->
-
-    <main id="main">
-      <article id="main_introduction">
-        <h2 class="blind">홈페이지 소개문입니다.</h2>
-        <h2 class="main_title">
-          알아가는 즐거움이 있습니다. <br /><br />책 말고.
-        </h2>
-        <button class="main_btn" type="button">맥주 취향 검사</button>
-        <ul class="main_list">
-          <li class="main_list_meeting">
-            <div class="main_list_flex">
-              <strong>모임 횟수</strong>
-              <span>8</span>
-            </div>
-          </li>
-          <li class="main_list_taste">
-            <div class="main_list_flex">
-              <strong>맥주 시음 개수</strong>
-              <span>41</span>
-            </div>
-          </li>
-          <li class="main_list_style">
-            <div class="main_list_flex">
-              <strong>스타일 개수</strong>
-              <span>29</span>
-            </div>
-          </strong></li>
+    <div id="first_page">
+      <nav id="navbar">
+        <h2 class="blind">목록입니다.</h2>
+        <div class="navbar_logo">
+          <img
+            src="./imgs/beer-favicon.png"
+            alt="This page's logo"
+            class="navbar_favicon"
+          />
+          <a href="#" class="navbar_logo_title aTextDeco">책방일지</a>
+        </div>
+        <ul class="navbar_menu">
+          <li class="navbar_menu_inspection">맥주 취향 검사</li>
+          <li>취향 유형</li>
         </ul>
-        <section id="main_link">
-          <h2 class="blind">책방일지 관련 링크입니다.</h2>
-          <a href="https://www.instagram.com/dailyrecordofbook/" target="_blank">
-            <img class="main_link_favicon" src="./imgs/book-community-favicon.png" alt="책방일지 독서모임 인스타그램 로고">
-          </a>
-          <a href="https://www.instagram.com/dailyrecordof_bookshop/" target="_blank">
-            <img class="main_link_bookStore" src="./imgs/./book-community-board.png" alt="책방일지 서점 인스타그램 로고">
-          </a>
-          <a href="https://blog.naver.com/dailyrecordofbook1/222340179818" target="_blank">
-            <img class="main_link_blog" src="./imgs/naver-logo.png" alt="책방일지 블로그">
-          </a>
-        </section>
-      </article>
-    </main>
+        <a href="#" class="aTextDeco navbar_pictures">사진들</a>
+      </nav>
+
+      <!-- Main -->
+
+      <main id="main">
+        <article id="main_introduction">
+          <h2 class="blind">홈페이지 소개문입니다.</h2>
+          <h2 class="main_title">
+            알아가는 즐거움이 있습니다. <br /><br />책 말고.
+          </h2>
+          <button class="main_btn" type="button" onclick="js:start()">맥주 취향 검사</button>
+          <ul class="main_list">
+            <li class="main_list_meeting">
+              <div class="main_list_flex">
+                <strong>모임 횟수</strong>
+                <span>8</span>
+              </div>
+            </li>
+            <li class="main_list_taste">
+              <div class="main_list_flex">
+                <strong>맥주 시음 개수</strong>
+                <span>41</span>
+              </div>
+            </li>
+            <li class="main_list_style">
+              <div class="main_list_flex">
+                <strong>스타일 개수</strong>
+                <span>29</span>
+              </div>
+            </strong></li>
+          </ul>
+          <section id="main_link">
+            <h2 class="blind">책방일지 관련 링크입니다.</h2>
+            <a href="https://www.instagram.com/dailyrecordofbook/" target="_blank">
+              <img class="main_link_favicon" src="./imgs/book-community-favicon.png" alt="책방일지 독서모임 인스타그램 로고">
+            </a>
+            <a href="https://www.instagram.com/dailyrecordof_bookshop/" target="_blank">
+              <img class="main_link_bookStore" src="./imgs/./book-community-board.png" alt="책방일지 서점 인스타그램 로고">
+            </a>
+            <a href="https://blog.naver.com/dailyrecordofbook1/222340179818" target="_blank">
+              <img class="main_link_blog" src="./imgs/naver-logo.png" alt="책방일지 블로그">
+            </a>
+          </section>
+        </article>
+      </main>
+    </div>
+
+
+    <!-- QnA  -->
+
+
+    <article id="qna">
+
+    </article>
+
+
+    <!-- Result -->
+
+
+    <article id="result"></article>
   </body>
 </html>

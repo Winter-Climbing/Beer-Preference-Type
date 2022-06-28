@@ -65,3 +65,11 @@ Click [here](https://www.youtube.com/watch?v=kMEb_BzyUqk)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.
 ```
+
+<!-- 글자 색상 -->
+
+<span style='color:red'>red</span>
+
+<!-- 형광펜 -->
+
+<span style='background-color:#fff5b1'>노란형관펜</span>

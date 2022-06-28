@@ -1,0 +1,49 @@
+@keyframes sample-ani {
+  0% {
+    transform: translate(-2000px);
+    background-color: transparent;
+    border-color: transparent;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade_out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

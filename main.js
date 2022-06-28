@@ -1,5 +1,21 @@
 "use strict";
 
+const first_page = document.querySelector("#first_page");
+const qna = document.querySelector("#qna");
+
+const start = () => {
+  first_page.style.WebkitAnimation = "fade_out 1s";
+  first_page.style.animation = "fade_out 1s";
+  setTimeout(() => {
+    qna.style.WebkitAnimation = "fade_in 1s";
+    qna.style.animation = "fade_in 1s";
+    setTimeout(() => {
+      first_page.style.display = "none";
+      qna.style.display = "block";
+    }, 450);
+  }, 450);
+};
+
 const navber = document.querySelector("#navbar");
 const navbar_height = navber.getBoundingClientRect().height;
 

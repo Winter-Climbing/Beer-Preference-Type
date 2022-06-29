@@ -2,6 +2,8 @@
 
 const first_page = document.querySelector("#first_page");
 const qna = document.querySelector("#qna");
+const qna_guide = document.querySelector(".qna_guide");
+const qna_question = document.querySelector(".qna_question");
 
 const start = () => {
   first_page.style.WebkitAnimation = "fade_out 1s";
@@ -16,6 +18,20 @@ const start = () => {
   }, 400);
 };
 
+const next = () => {
+  qna_guide.style.WebkitAnimation = "fade_out 1s";
+  qna_guide.style.animation = "fade_out 1s";
+  setTimeout(() => {
+    qna_question.style.WebkitAnimation = "fade_in 1s";
+    qna_question.style.animation = "fade_in 1s";
+    setTimeout(() => {
+      qna_guide.style.display = "none";
+      qna_question.style.display = "block";
+    }, 200);
+  }, 200);
+};
+
+// 스크롤 변화에 따른 넷바 변환
 const navber = document.querySelector("#navbar");
 const navbar_height = navber.getBoundingClientRect().height;
 

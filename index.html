@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <!-- <div id="first_page">
+    <div id="first_page">
       <nav id="navbar">
         <h2 class="blind">목록입니다.</h2>
         <div class="navbar_logo">
@@ -45,7 +45,7 @@
 
       <!-- Main -->
 
-    <!-- <main id="main">
+    <main id="main">
         <article id="main_introduction">
           <h2 class="blind">홈페이지 소개문입니다.</h2>
           <h2 class="main_title">
@@ -86,16 +86,18 @@
           </section>
         </article>
       </main>
-    </div> -->
+    </div>
 
     <!-- QnA  -->
 
     <article id="qna">
-      <!-- <section class="qna_firstPage">
-        <p class="qna_firstPage_firstSentence">더 좋았던 맥주를 선택하세요!</p>
+      <section class="qna_guide">
+        <p class="qna_guide_firstSentence">더 좋았던 맥주를 선택하세요!</p>
         <p>(기억나지 않는 맥주가 나왔다면 기억나는 맥주를 선택해요!)</p>
-        <button class="qna_firstPage_btn" type="button">시작하기</button>
-      </section> -->
+        <button class="qna_guide_btn" type="button" onclick="js:next()">
+          시작하기
+        </button>
+      </section>
 
       <section class="qna_question">
         <div class="qna_question_progress">
@@ -103,16 +105,16 @@
           <span class="qna_question_progress_text">5%</span>
         </div>
         <div class="qna_question_beer">
-          <img
-            class="qna_question_beerLeft"
-            src="./imgs/beers/hopenweisse.jpg"
-            alt="호펜바이세 탭5"
-          />
-          <img
-            class="qna_question_beerRight"
-            src="./imgs/beers/tap7.png"
-            alt="슈나이더 탭7"
-          />
+            <img
+              class="qna_question_beerLeft"
+              src="./imgs/beers/hopenweisse.jpg"
+              alt="호펜바이세 탭5"
+            />
+            <img
+              class="qna_question_beerRight"
+              src="./imgs/beers/tap7.png"
+              alt="슈나이더 탭7"
+            />
         </div>
 
         <p class="qna_question_number">1/20</p>

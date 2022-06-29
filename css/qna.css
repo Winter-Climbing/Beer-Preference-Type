@@ -94,7 +94,7 @@ h2 {
   position: relative;
 }
 
-.qna_firstPage {
+.qna_guide {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +106,7 @@ h2 {
   font-size: var(--font-medium);
 }
 
-.qna_firstPage_btn {
+.qna_guide_btn {
   cursor: pointer;
   width: 140px;
   height: 50px;
@@ -119,11 +119,12 @@ h2 {
   transition: all var(--annimation-duration) ease;
 }
 
-.qna_firstPage_btn:hover {
+.qna_guide_btn:hover {
   transform: scale(1.2);
 }
 
 .qna_question {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -163,8 +164,8 @@ h2 {
 .qna_question_beerLeft,
 .qna_question_beerRight {
   cursor: pointer;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   transition: all var(--annimation-duration) ease;
 }

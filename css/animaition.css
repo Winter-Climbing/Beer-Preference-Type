@@ -1,4 +1,4 @@
-@keyframes sample-ani {
+@keyframes main-ani {
   0% {
     transform: translate(-2000px);
     background-color: transparent;

@@ -23,10 +23,9 @@
 
     <script src="main.js" defer></script>
   </head>
-  
 
   <body>
-    <div id="first_page">
+    <!-- <div id="first_page">
       <nav id="navbar">
         <h2 class="blind">목록입니다.</h2>
         <div class="navbar_logo">
@@ -46,7 +45,7 @@
 
       <!-- Main -->
 
-      <main id="main">
+    <!-- <main id="main">
         <article id="main_introduction">
           <h2 class="blind">홈페이지 소개문입니다.</h2>
           <h2 class="main_title">
@@ -87,19 +86,32 @@
           </section>
         </article>
       </main>
-    </div>
-
+    </div> -->
 
     <!-- QnA  -->
 
-
     <article id="qna">
-      <p>다음 페이지!</p>
+      <section class="qna_firstPage">
+        <p class="qna_firstPage_firstSentence">더 좋았던 맥주를 선택하세요!</p>
+        <p>(기억나지 않는 맥주가 나왔다면 기억나는 맥주를 선택해요!)</p>
+        <button class="qna_firstPage_btn" type="button">시작하기</button>
+      </section>
+
+      <section>
+        <div class="progress">
+          <div class="progress_fill"></div>
+          <span class="progress_text">5%</span>
+        </div>
+        <div>
+          <img src="./imgs/beers/" alt="" />
+          <img src="" alt="" />
+        </div>
+
+        <p>1/20</p>
+      </section>
     </article>
 
-
     <!-- Result -->
-
 
     <article id="result"></article>
   </body>

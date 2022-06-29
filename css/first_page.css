@@ -73,7 +73,7 @@
   background-color: var(--color-yellow);
   border: 1px solid var(--color-yellow);
   border-radius: 45%;
-  animation: sample-ani 2s ease-in-out;
+  animation: main-ani 2s ease-in-out;
   transition: all var(--annimation-duration) ease;
 }
 

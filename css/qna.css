@@ -1,5 +1,148 @@
-#qna {
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-beige: #f5f2e1;
+  --color-yellow: #f1d64e;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radious: 4px;
+
+  /* Annimations */
+  --annimation-duration: 300ms;
+}
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  cursor: default;
+  margin: auto;
+  font-family: "GangwonEdu_OTFBoldA";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.aTextDeco {
+  color: var(--color-black);
+}
+
+.blind {
   display: none;
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+}
+
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*QnA  */
+
+#qna {
+  /* display: none; */
   height: 100vh;
-  background-color: var(--color-white-smoke);
+  background-color: var(--color-beige);
+  position: relative;
+}
+
+.qna_firstPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: var(--font-medium);
+}
+
+.qna_firstPage_btn {
+  cursor: pointer;
+  width: 140px;
+  height: 50px;
+  margin-top: 30px;
+  border: 0.1px solid var(--color-yellow);
+  border-radius: var(--size-border-radious);
+  background-color: var(--color-yellow);
+  color: var(--color-dark-grey);
+  font-size: var(--font-regular);
+  transition: all var(--annimation-duration) ease;
+}
+
+.qna_firstPage_btn:hover {
+  transform: scale(1.2);
+}
+
+.progress {
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  height: 30px;
+  background: var(--color-dark-grey);
+  border-radius: var(--size-border-radious);
+  overflow: hidden;
+}
+
+.progress_fill {
+  width: 5%;
+  height: 100%;
+  background: var(--color-yellow);
+}
+
+.progress_text {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: var(--color-dark-white);
 }

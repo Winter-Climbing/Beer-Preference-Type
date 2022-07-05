@@ -108,17 +108,18 @@
         <div class="qna_question_beer">
           <h2 class="blind">맥주 이미지</h2>
             <img
-              class="qna_question_beerLeft"
+              class="qna_question_beerLeft hop"
               src="./imgs/beers/hopenweisse.jpg"
               alt="호펜바이세 탭5"
+              onclick="hop()"
             />
             <img
-              class="qna_question_beerRight"
+              class="qna_question_beerRight bacteria"
               src="./imgs/beers/tap7.png"
               alt="슈나이더 탭7"
             />
         </div>
-        <div class="qna_question_beer">
+        <!-- <div class="qna_question_beer">
           <h2 class="blind">맥주 이미지</h2>
             <img
               class="qna_question_beerLeft"
@@ -130,8 +131,8 @@
               src="./imgs/beers/dirty.jpg"
               alt="더티바스타드"
             />
-        </div>
-        <div class="qna_question_beer">
+        </div> -->
+        <!-- <div class="qna_question_beer">
           <h2 class="blind">맥주 이미지</h2>
             <img
               class="qna_question_beerLeft"
@@ -364,10 +365,15 @@
               src="./imgs/beers/nevercalm.jpg"
               alt="네버캄"
             />
-        </div>
+        </div> -->
         
         <p class="qna_question_number">1/20</p>
       </section>
+      <input id="hop" type="hidden" value="0">
+      <input id="malt" type="hidden" value="0">
+      <input id="bacteria" type="hidden" value="0">
+      <input id="blackBeer" type="hidden" value="0">
+      <input id="sour" type="hidden" value="0">
     </article>
 
     <!-- Result -->

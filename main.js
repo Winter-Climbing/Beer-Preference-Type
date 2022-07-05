@@ -5,6 +5,9 @@ const qna = document.querySelector("#qna");
 const qna_guide = document.querySelector(".qna_guide");
 const qna_question = document.querySelector(".qna_question");
 
+//  밑의 함수는 버튼 클릭시 페이지 넘기는 함수
+//  중복되는 부분이 많기에 차후 리펙터링 요망!
+
 const start = () => {
   first_page.style.WebkitAnimation = "fade_out 1s";
   first_page.style.animation = "fade_out 1s";
@@ -30,6 +33,14 @@ const next = () => {
     }, 200);
   }, 200);
 };
+
+// 점수 매기는 함수
+
+function hop() {
+  let hop_love = document.querySelector("#hop").value;
+  hop_love = parseInt(hop_love) + 1;
+  console.log(hop_love);
+}
 
 // 스크롤 변화에 따른 넷바 변환
 const navber = document.querySelector("#navbar");

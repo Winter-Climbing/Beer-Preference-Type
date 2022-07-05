@@ -36,11 +36,19 @@ const next = () => {
 
 // 점수 매기는 함수
 
-function hop() {
+const hop = () => {
   let hop_love = document.querySelector("#hop").value;
-  hop_love = parseInt(hop_love) + 1;
-  console.log(hop_love);
-}
+  hop_love++;
+
+  document.querySelector("#hop").value = hop_love;
+};
+
+const bacteria = () => {
+  let bacteria_love = document.querySelector("#hop").value;
+  bacteria_love++;
+
+  document.querySelector("#bacteria").value = bacteria_love;
+};
 
 // 스크롤 변화에 따른 넷바 변환
 const navber = document.querySelector("#navbar");
